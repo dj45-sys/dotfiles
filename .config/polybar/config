@@ -68,7 +68,7 @@ font-2 = JetBrains Mono ExtraBold Nerd Font:pixelsize=10;1
 
 modules-left = ewmh wtitle
 modules-center = 
-modules-right = filesystem pulseaudio xkeyboard wlan eth temperature date 
+modules-right = filesystem pulseaudio xkeyboard wlan temperature date 
 
 tray-position = right
 tray-padding = 2
@@ -286,12 +286,12 @@ label-monitor = %name%
 label-monitor-underline = ${colors.cyan}
 
 label-active = %name%
-label-active-foreground = ${colors.gray}
+label-active-foreground = ${colors.blue}
 label-active-underline =  ${colors.cyan}
 label-active-padding = 1
 
 label-occupied = %name%
-label-occupied-foreground = ${colors.blue}
+label-occupied-foreground = ${colors.fg}
 label-occupied-underline = ${colors.cyan}
 label-occupied-padding = 1
 
@@ -301,7 +301,7 @@ label-urgent-underline = ${colors.cyan}
 label-urgent-padding = 1
 
 label-empty = %name%
-label-empty-foreground = ${colors.fg}
+label-empty-foreground = ${colors.gray}
 label-empty-underline = ${colors.cyan}
 label-empty-padding = 1
 
