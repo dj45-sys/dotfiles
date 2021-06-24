@@ -1,0 +1,9 @@
+background_opacity: 0.8
+font:
+  bold:
+    family: JetBrains Mono ExtraBold Nerd Font
+  italic:
+    family: JetBrains Mono Medium Nerd Font
+  normal:
+    family: JetBrains Mono Medium Nerd Font
+  size: 11.0
