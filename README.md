@@ -1,23 +1,25 @@
-# Dj45-Sys's Dotfiles
-
+<img src="./img/dj45-sys-dotfilesIcon.png">
+-------------
 <div align="center">
-  <img src="./screenshots/dotfilesicon.png" align="center"/>
+  <img src="./img/dotfilesicon.png" align="center" width="150px"/>
 </div>
 
-## Table Of Contents
+<img src="./img/tableofcontentsicon.png">
+-----------
 
 - [My Configs](#my-configs)
   - [VS Code Configs](#vs-code-configs)
 - [FaQs](#faqs)
-  - [How to install Arch Linux](#how-to-install-archlinux)
   - [How to install](#how-to-install)
+  - [How to install Arch Linux](#how-to-install-archlinux)
 - [Screenshots](#screenshots)
   - [Xmonad & Polybar](#xmonad--polybar)
   - [Neovim](#neovim)
   - [Alacritty & Fish](#alacritty--fish)
   - [VS Code](#vs-code)
 
-## My Configs:
+<img id="my-configs" src="./img/myconfigsicon.png" />
+-----------
 
 | Config               | To                                                                        |
 | -------------------- | ------------------------------------------------------------------------- |
@@ -32,7 +34,8 @@
 | **Icons:**           | <a href="https://bit.ly/3j27d2O">Candy Icons</a>                          |
 | **Cursor:**          | <a href="https://bit.ly/3qp18zc">Sweet Cursors</a>                        |
 
-### VS Code Configs:
+<img id="vs-code-configs" src="./img/VSCodeConfigs.png" />
+-----------
 
 <pre>
 Font: VictorMono Nerd Font
@@ -41,14 +44,12 @@ Files Icons: Ayu
 Product Icons: Bootstrap Icons
 </pre>
 
-# FaQs:
+<img id="faqs" src="./img/FaQsIcon.png">
+-----------
 
-## How to install ArchLinux:
+<img id="how-to-install" src="./img/HowToInstallIcon.png">
+-----------
 
-First: [Here](https://wiki.archlinux.org/title/Installation_guide) <br/>
-After: [Here](https://github.com/antoniosarosi/dotfiles#arch-installation)
-
-## How to Install :
 
 Assuming you use ArchLinux
 
@@ -63,8 +64,13 @@ Assuming you use ArchLinux
 | **Polybar**      | `yay -S polybar`                                                                                     |
 | **Neovim:**      | `yay -Sy neovim-nightly-bin`                                                                         |
 | **VS Code**      | `yay -Sy visual-studio-code-bin`                                                                     |
+### How to install ArchLinux:
 
-# Screenshots:
+First: [Here](https://wiki.archlinux.org/title/Installation_guide) <br/>
+After: [Here](https://github.com/antoniosarosi/dotfiles#arch-installation)
+
+<img id="screenshots" src="./img/ScreenshotslIcon.png">
+-----------
 
 ## Xmonad & Polybar:
 
