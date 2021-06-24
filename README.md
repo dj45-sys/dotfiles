@@ -1,12 +1,14 @@
 <img src="./img/dj45-sys-dotfilesIcon.png">
-======
+
+#
 
 <div align="center">
   <img src="./img/dotfilesicon.png" align="center" width="150px"/>
 </div>
 
 <img src="./img/tableofcontentsicon.png">
-======
+
+#
 
 - [My Configs](#my-configs)
   - [VS Code Configs](#vs-code-configs)
@@ -20,8 +22,8 @@
   - [VS Code](#vs-code)
 
 <img id="my-configs" src="./img/myconfigsicon.png" />
-======
 
+#
 
 | Config               | To                                                                        |
 | -------------------- | ------------------------------------------------------------------------- |
@@ -37,8 +39,8 @@
 | **Cursor:**          | <a href="https://bit.ly/3qp18zc">Sweet Cursors</a>                        |
 
 <img id="vs-code-configs" src="./img/VSCodeConfigs.png" />
-======
 
+#
 
 <pre>
 Font: VictorMono Nerd Font
@@ -48,13 +50,12 @@ Product Icons: Bootstrap Icons
 </pre>
 
 <img id="faqs" src="./img/FaQsIcon.png">
-======
 
+#
 
 <img id="how-to-install" src="./img/HowToInstallIcon.png">
-======
 
-
+#
 
 Assuming you use ArchLinux
 
@@ -69,14 +70,15 @@ Assuming you use ArchLinux
 | **Polybar**      | `yay -S polybar`                                                                                     |
 | **Neovim:**      | `yay -Sy neovim-nightly-bin`                                                                         |
 | **VS Code**      | `yay -Sy visual-studio-code-bin`                                                                     |
+
 ### How to install ArchLinux:
 
 First: [Here](https://wiki.archlinux.org/title/Installation_guide) <br/>
 After: [Here](https://github.com/antoniosarosi/dotfiles#arch-installation)
 
 <img id="screenshots" src="./img/ScreenshotslIcon.png">
-======
 
+#
 
 ## Xmonad & Polybar:
 
