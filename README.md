@@ -1,7 +1,7 @@
 # Dj45-Sys's Dotfiles
 
-<div style="display:flex;">
-  <img src="./screenshots/dotfilesicon.png" style="justify-content:center;"/>
+<div align="center">
+  <img src="./screenshots/dotfilesicon.png" align="center"/>
 </div>
 
 ## Table Of Contents
