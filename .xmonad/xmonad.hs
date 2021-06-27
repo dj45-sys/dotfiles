@@ -12,6 +12,7 @@ import XMonad.Util.NamedWindows (getName)
 import Control.Monad (forM_, join)
 import Data.List (sortBy)
 import Data.Function (on)
+import Data.Monoid (Endo)   
 import XMonad.Hooks.SetWMName
 import XMonad.Hooks.EwmhDesktops (fullscreenEventHook, ewmh)
 import XMonad.Hooks.InsertPosition
@@ -40,7 +41,10 @@ main = do
     , normalBorderColor = myNormColor
     , focusedBorderColor = myFocusColor
     , startupHook = myStartup
-    , manageHook = (isFullscreen --> doFullFloat) <+> manageDocks <+> insertPosition Below Newer
+    --, manageHook = (isFullscreen --> doFullFloat) <+> manageDocks <+> insertPosition Below Newer
+    , manageHook = (isFullscreen --> doFullFloat)
+                <+> manageDocks
+                <+> myManageHook
     , layoutHook = myLayoutHook    
     , handleEventHook = docksEventHook
     } `additionalKeysP` myKeys
@@ -75,8 +79,8 @@ myKeys =
     ("M-S-s", spawn "scrot -s")
   ]
 myWorkspaces =
-   --    "                  ﬏                                         
-   ["\xf269 ", "\xe795 ", "\xfb0f ", "\xe7c5 ", "\xe256 ", "\xf07b ", "\xf196 "]
+   --    "                  ﬏                             
+   ["\xf269 ", "\xe795 ", "\xfb0f ", "\xe256 ", "\xf07b ", "\xf196 "]
 myStartup = do
   setWMName "LG3D"
   spawnOnce "picom -f"
@@ -134,4 +138,12 @@ myLayoutHook = avoidStruts
         ||| tall
         ||| threeCol
         ||| grid
-
+myManageHook :: Query (Endo WindowSet)
+myManageHook = composeAll
+    [ className =? "Brave-browser" --> doShift (head myWorkspaces)
+    , className =? "Alacritty" --> doShift (myWorkspaces !! 1)
+    , className =? "Code" --> doShift (myWorkspaces !! 2)
+    , className =? "code" --> doShift (myWorkspaces !! 2)
+    , className =? "discord" --> doShift (myWorkspaces !! 5)
+    , title =? "FLOATING" --> doFloat
+    ]
